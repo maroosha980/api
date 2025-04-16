@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'api.dart';
+import 'display.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
 
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const GradeBookPage(),
+      home: const EntryAndLoadScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
